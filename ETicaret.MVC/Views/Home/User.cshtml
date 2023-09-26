@@ -1,0 +1,12 @@
+﻿@model List<ETicaret.Models.User>
+@{
+    <h1 class="display-4">Welcome</h1>
+    foreach(var item in Model) { 
+    <div class="text-center">
+        <h3> @item.Name</h3>
+       <h5> @item.Email</h5>
+       <h5> @item.UserName</h5>
+        <h5> @item.Password</h5>
+    </div>
+    }
+}

@@ -1,0 +1,10 @@
+﻿@model List<ETicaret.Models.Adres>
+@{
+    <h1 class="display-4">Welcome</h1>
+    foreach(var item in Model) { 
+    <div class="text-center">
+        <h3> @item.UserId</h3>
+       <h5> @item.Description</h5>
+    </div>
+    }
+}
